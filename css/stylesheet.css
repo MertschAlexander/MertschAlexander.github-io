@@ -4,32 +4,56 @@
          url('Knewave-Regular.woff') format('woff'),
          url('Knewave-Regular.ttf') format('truetype');
 }
-#WelcomeMessage{
-    font-size: 40px;
-	padding-top: 40px
+@keyframes body {
+  from {background-color: #01012B;}
+  to {background-color: #1a0033;}
+}
+@keyframes navigation {
+  from {background-color: #980A37;}
+  to {background-color: #e60073;}
+}
+img{
+   border-radius: 25px;
+   height:auto;
 }
 header{
     font-family: Knewave;
 	color: white;
 	background-color: #FF2A6D;
 }
+#WelcomeMessage{
+	padding: 40px;
+	font-size:2.5vw;
+}
 nav{
     font-family: Knewave;
 	background-color: #980A37;
 	text-align: center;
+	padding: 20px;
+	animation-name: navigation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 nav a{
     font-family: Knewave;
-	font-size: 30px;
+	font-size:1.5vw;
 	margin: 20px;
 	color: white;
 	background-color: #980A37;
+	animation-name: navigation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 body{
     font-family: Knewave;
 	text-align: center;
 	color: white;
-	background-color: #01012B;
+	animation-name: body;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 aside{
 	background-color: #5B0520;
