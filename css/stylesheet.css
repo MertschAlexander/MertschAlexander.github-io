@@ -21,26 +21,27 @@ header{
 	color: white;
 	background-color: #FF2A6D;
 }
-#WelcomeMessage{
+@media screen and (min-width: 500px) {
+ #WelcomeMessage{
 	padding: 40px;
-	font-size:2.6vw;
-}
-h1{
+	font-size:7vw;	
+ }
+ h1{
 	font-family: Knewave;
 	color: white;	
-    font-size:2.35vw;
-}
-h2{
+    font-size:5.8vw;
+ }
+ h2{
 	font-family: Knewave;
 	color: white;	
-    font-size:2.05vw;
-}
-h3{
+    font-size:4.3vw;
+ }
+ h3{
 	font-family: Knewave;
 	color: white;	
-    font-size:1.55vw;
-}
-nav{
+    font-size:3.5vw;
+ }
+ nav{
     font-family: Knewave;
 	background-color: #980A37;
 	text-align: center;
@@ -49,8 +50,65 @@ nav{
     animation-duration: 5s;
     animation-direction: alternate;
 	animation-iteration-count: infinite;
+ }
+ nav a{
+    font-family: Knewave;
+	font-size:2.4vw;
+	margin: 20px;
+	color: white;
+	background-color: #980A37;
+	animation-name: navigation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
+ }
+ body{
+    font-family: Knewave;
+	text-align: center;
+	color: white;
+	animation-name: body;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
+ }
+ aside{
+	background-color: #5B0520;
+ }
+ footer{
+	background-color: #FF2A6D;
+ }
 }
-nav a{
+@media screen and (min-width: 1000px) {
+ #WelcomeMessage{
+	padding: 40px;
+	font-size:3.2vw;
+ }
+ h1{
+	font-family: Knewave;
+	color: white;	
+    font-size:2.55vw;
+ }
+ h2{
+	font-family: Knewave;
+	color: white;	
+    font-size:2.25vw;
+ }
+ h3{
+	font-family: Knewave;
+	color: white;	
+    font-size:1.75vw;
+ }
+ nav{
+    font-family: Knewave;
+	background-color: #980A37;
+	text-align: center;
+	padding: 20px;
+	animation-name: navigation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
+ }
+ nav a{
     font-family: Knewave;
 	font-size:1.5vw;
 	margin: 20px;
@@ -60,8 +118,8 @@ nav a{
     animation-duration: 5s;
     animation-direction: alternate;
 	animation-iteration-count: infinite;
-}
-body{
+ }
+ body{
     font-family: Knewave;
 	text-align: center;
 	color: white;
@@ -69,10 +127,11 @@ body{
     animation-duration: 5s;
     animation-direction: alternate;
 	animation-iteration-count: infinite;
-}
-aside{
+ }
+ aside{
 	background-color: #5B0520;
-}
-footer{
+ }
+ footer{
 	background-color: #FF2A6D;
+ }
 }
