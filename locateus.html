@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+  <title>Welcome to Game Station!</title>
+ </head>
+ <body>
+  <!--Header and Navigation-->
+  <header>
+   <section>
+    <a href="index.html"><h1 id="WelcomeMessage">Game Station</h1></a>
+   </section>
+   <nav>
+   	 <a href="aboutus.html">About us</a>
+	 <a href="shopping.html">Shop</a>
+	 <a href="locateus.html">Locate us</a>
+	 <a href="services.html">Services</a>
+	 <a href="contactus.html">Contact us</a>
+   </nav>
+  </header>
+  <!--Sections for map-->
+  <section>
+  <h1>Find our locations!</h1>
+  <img src="images/map.jpg" alt="Map" style="width:50%;height:auto">
+  <p>Click the button to grab your coordinates so you can find the nearest store near you.</p>
+  <button onclick="getLocation()">Get your coordinates</button>
+  <p id="geolocation"></p>
+   <script>
+     var x = document.getElementById("geolocation");
+     function getLocation() {
+     if (navigator.geolocation) {
+     navigator.geolocation.getCurrentPosition(showPosition);
+     } else {
+     x.innerHTML = "Your browser does not support Geolocation, please try a different one.";
+     }
+    }
+
+    function showPosition(position) {
+     x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+    }
+   </script>
+  </section>
+  <!--Sections for addresses-->
+  <section>
+   <h2>Our addresses</h2>
+   <p>99999 Hull Street Midlothian VA.</p>
+   <p>99999 Baileybridge Rd. Midlothian VA.</p>
+  </section>
+  <!--Footer-->
+  <footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+ </body>
+</html>
