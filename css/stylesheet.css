@@ -21,6 +21,11 @@ header{
 	color: white;
 	background-color: #FF2A6D;
 }
+video{
+    border-radius: 5%;
+	max-width: 30%;
+	height: auto;
+}
 @media screen and (min-width: 500px) {
  #WelcomeMessage{
 	padding: 40px;
@@ -41,7 +46,19 @@ header{
 	color: white;	
     font-size:3.5vw;
  }
-  p{
+ p{
+	font-family: Knewave;
+	color: white;	
+    font-size:2.25vw;
+ }
+ a{
+  color: white;
+  transition: color 0.3s;
+ }
+ a:hover{
+  color: blue;
+ }
+ label{
 	font-family: Knewave;
 	color: white;	
     font-size:2.25vw;
@@ -91,7 +108,20 @@ header{
 	animation-iteration-count: infinite;
 	font-size:2.2vw;
 	text-align: center;
-    border-radius: 5%;
+	transition: font-size 0.5s;
+ } 
+ button:hover{
+	font-size:2.4vw;
+ } 
+ input{
+	color: white;
+    background-color: #980A37;
+	animation-name: navigation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
+	font-size:2.2vw;
+	text-align: center;
  } 
 }
 @media screen and (min-width: 1000px) {
@@ -118,6 +148,18 @@ header{
 	font-family: Knewave;
 	color: white;	
     font-size:1.25vw;
+ }
+ label{
+	font-family: Knewave;
+	color: white;	
+    font-size:1.25vw;
+ }
+ a{
+  color: white;
+  transition: color 0.3s;
+ }
+ a:hover{
+  color: blue;
  }
  nav{
     font-family: Knewave;
@@ -164,6 +206,19 @@ header{
 	animation-iteration-count: infinite;
 	font-size:1.7vw;
 	text-align: center;
-    border-radius: 5%;
+	transition: font-size 0.5s;
+ } 
+ button:hover{
+	font-size:1.9vw;
+ } 
+ input{
+	color: white;
+    background-color: #980A37;
+	animation-name: navigation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;
+	font-size:1.7vw;
+	text-align: center;
  } 
 }
